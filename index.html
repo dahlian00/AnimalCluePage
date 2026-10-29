@@ -1,15 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AnimalClue</title>
+    <meta charset="utf-8">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://kit.fontawesome.com/f8ddf9854a.js" crossorigin="anonymous"></script>
-    <meta charset="utf-8">
     <meta name="description"
-          content="AnimalClue: Recognizing Animals by their Traces">
-    <meta name="keywords" content="MMMU, LMM, LMM Evaluation, Vision Language Model, Large Language Model, Large Multimodal Model, artificial intelligence, AI, AGI, artificial general intelligence">
+          content="AnimalClue (ICCV 2025 Highlight): a large-scale dataset for identifying 968 animal species from footprints, feces, eggs, bones, and feathers.">
+    <meta name="keywords" content="AnimalClue, animal traces, footprints, feces, eggs, bones, feathers, species identification, wildlife monitoring, computer vision, ICCV 2025">
+    <meta name="author" content="Risa Shinoda, Nakamasa Inoue, Iro Laina, Christian Rupprecht, Hirokatsu Kataoka">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> AnimalClue: Recognizing Animals by their Traces</title>
+    <title>AnimalClue</title>
+    <link rel="canonical" href="https://dahlian00.github.io/AnimalCluePage/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AnimalClue: Recognizing Animals by their Traces (ICCV 2025)">
+    <meta property="og:description" content="A large-scale dataset for identifying animal species from footprints, feces, eggs, bones, and feathers.">
+    <meta property="og:url" content="https://dahlian00.github.io/AnimalCluePage/">
+    <meta property="og:image" content="https://dahlian00.github.io/AnimalCluePage/static/images/animalclue_overview.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ScholarlyArticle",
+      "headline": "AnimalClue: Recognizing Animals by Their Traces",
+      "url": "https://dahlian00.github.io/AnimalCluePage/",
+      "image": [
+        "https://dahlian00.github.io/AnimalCluePage/static/images/animalclue_overview.png",
+        "https://dahlian00.github.io/AnimalCluePage/static/images/annotation.png"
+      ],
+      "datePublished": "2025",
+      "isPartOf": "Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV 2025)",
+      "sameAs": "http://arxiv.org/abs/2507.20240",
+      "author": [
+        {"@type": "Person", "name": "Risa Shinoda", "url": "https://sites.google.com/view/risashinoda/home"},
+        {"@type": "Person", "name": "Nakamasa Inoue", "url": "https://mmai.tech/"},
+        {"@type": "Person", "name": "Iro Laina", "url": "https://scholar.google.com/citations?user=n9nXAPcAAAAJ&hl=en"},
+        {"@type": "Person", "name": "Christian Rupprecht", "url": "https://chrirupp.github.io/"},
+        {"@type": "Person", "name": "Hirokatsu Kataoka", "url": "https://hirokatsukataoka.net/"}
+      ]
+    }
+    </script>
 
     <link rel="icon" href="./static/images/clue_icon.png">
 
@@ -64,7 +95,7 @@
     <section class="hero">
       <div class="hero-body has-text-centered">
         <h1 class="title is-1 publication-title is-bold">
-          <img src="static/images/clue_icon.png" style="width:1em; vertical-align: middle" alt="Logo"/>
+          <img src="static/images/clue_icon.png" style="width:1em; vertical-align: middle" alt="AnimalClue logo"/>
           <span class="mmmu" style="vertical-align: middle">AnimalClue</span>
         </h1>
         <h2 class="subtitle is-3 publication-subtitle">
@@ -135,7 +166,7 @@
 
     <section class="hero teaser">
       <div class="container is-max-desktop has-text-centered">
-        <img src="static/images/animalclue_overview.png" alt="geometric reasoning",style="margin-top: 20rem;">
+        <img src="static/images/animalclue_overview.png" alt="AnimalClue dataset: annotated footprints, feces, eggs, bones, and feathers of animals such as bobcat, American black bear, and whimbrel, with a taxonomy of 968 species">
         <p>Example images of AnimalClue. We present AnimalClue, a dataset designed for identifying animal species based on their traces. Our dataset includes footprints, feces, eggs, bones, and feathers, totaling 159,605 bounding boxes from 968 animal species. We also annotate 22 traits such as habitat, diet, and activity pattern.
           We establish four benchmarks for evaluating models: classification, detection, instance segmentation, and traits classification. 
         </p>
@@ -149,8 +180,8 @@
             <h2 class="title is-3">🔔News</h2>
             <div class="content has-text-justified">
               <p>
-                 <b>🔥[2024-08-25] We release the<a href="https://huggingface.co/spaces/risashinoda/animalclue_yolo_det">Demo</a> on Hugging Face 🤗</b><br> 
-                <b>🔥[2024-07-29] Introducing <a href="http://arxiv.org/abs/2507.20240">AnimalClue</a> on arXiv! 🚀</b>
+                 <b>🔥[2025-08-25] We release the <a href="https://huggingface.co/spaces/risashinoda/animalclue_yolo_det">Demo</a> on Hugging Face 🤗</b><br> 
+                <b>🔥[2025-07-29] Introducing <a href="http://arxiv.org/abs/2507.20240">AnimalClue</a> on arXiv! 🚀</b>
                 <!-- <b>🔥[2024-09-05] Introducing <a href="https://arxiv.org/abs/2409.02813">MMMU-Pro</a>, a robust version of MMMU benchmark for multimodal AI evaluation! 🚀</b> -->
               </p>
           </div>
@@ -192,7 +223,7 @@
     <section class="hero is-light is-small">
       <div class="hero-body has-text-centered">
         <h1 class="title is-1 mmmu">
-          <img src="static/images/clue_icon.png" alt="Logo" class="mmmu-logo"/>
+          <img src="static/images/clue_icon.png" alt="AnimalClue logo" class="mmmu-logo"/>
           <span class="mmmu">AnimalClue</span>
         </h1>
       </div>
@@ -207,7 +238,7 @@
           <div class="column is-four-fifths">
             <h2 class="title is-3">Overview</h2>
             <div class="content has-text-justified">
-              <img src="static/images/annotation.png" alt="algebraic reasoning" class="center">
+              <img src="static/images/annotation.png" alt="Annotation examples from the AnimalClue dataset: bounding boxes on footprints and segmentation masks on feces, eggs, bones, and feathers, labeled by species" class="center">
               <br>
               <p>
                 <strong>Our dataset</strong> consists of <strong>968 species, 200 families, and 65 orders</strong>. 
@@ -239,7 +270,7 @@
                 It supports a wide range of tasks and includes <strong>fine-grained annotations</strong>.
               </p>
               <div class="content has-text-centered">
-                <img src="static/images/comparison.png" alt="algebraic reasoning" class="center">
+                <img src="static/images/comparison.png" alt="Table comparing AnimalClue with previous animal track datasets by trace types, number of species, bounding boxes, and supported tasks" class="center">
                 <p> Comparison with previous animal tracking datasets. CLS, DET, and SEG indicate classification, detection, and instance segmentation, respectively. Our AnimalClue contains diverse species and more number of bounding boxes.</p>
               </div>
             </div>
@@ -250,8 +281,8 @@
             <h2 class="title is-3">Statistics</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/statistics_100.png" alt="algebraic reasoning" class="center">
-                <p> Comparison with previous animal tracking datasets. CLS, DET, and SEG indicate classification, detection, and instance segmentation, respectively. Our AnimalClue contains diverse species and more number of bounding boxes.</p>
+                <img src="static/images/statistics_100.png" alt="Bar chart of annotation counts per species in AnimalClue, stacked by footprint, feces, bone, egg, and feather" class="center">
+                <p> Species distribution in our AnimalClue. We illustrate the top 100 most frequent species, with the vertical axis representing log frequency.</p>
               </div>
             </div>
           </div>
@@ -275,18 +306,18 @@
             <h2 class="title is-3">Classification</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/classification.png" alt="algebraic reasoning" class="center">
-                <p> Classification accuracy for all, frequent, and rare categories of animal specie.Throughout the species, family, and order categorization, Swin-B model tends to be higher accuracies on AnimalClue.</p>
+                <img src="static/images/classification.png" alt="Table of species, family, and order classification accuracy on AnimalClue for all, frequent, and rare categories" class="center">
+                <p> Classification accuracy for all, frequent, and rare categories of animal species. Throughout the species, family, and order categorization, Swin-B model tends to be higher accuracies on AnimalClue.</p>
               </div>
             </div>
           </div>
         </div>
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">Visialization of t-SNE</h2>
+            <h2 class="title is-3">Visualization of t-SNE</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/tnse.png" alt="algebraic reasoning" class="center">
+                <img src="static/images/tnse.png" alt="t-SNE plots of animal trace image features from CLIP, BioCLIP, and fine-tuned CLIP on AnimalClue" class="center">
                 <p> Visualization of t-SNE. By using a labeled dataset specialized for observing indirect animal clues, the separability among categories have been improved. When visualized in the feature space, the categories are better distinct.</p>
               </div>
             </div>
@@ -297,7 +328,7 @@
             <h2 class="title is-3">Detection</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/detection.png" alt="algebraic reasoning" class="center">
+                <img src="static/images/detection.png" alt="Table of object detection results (mAP@50-95) on AnimalClue footprint, feces, egg, bone, and feather data" class="center">
                 <p>  Detection results on footprints, feces, eggs, bones, and feathers datasets (mAP@50-95). </p>
               </div>
             </div>
@@ -308,8 +339,8 @@
             <h2 class="title is-3">Segmentation</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/segmentation.png" alt="algebraic reasoning" class="center">
-                <p> Segmentation results on fecess, eggs, bones, and feathers datasets (Mask mAP@50-95).</p>
+                <img src="static/images/segmentation.png" alt="Table of instance segmentation results (mask mAP@50-95) on AnimalClue feces, egg, bone, and feather data" class="center">
+                <p> Segmentation results on feces, eggs, bones, and feathers datasets (Mask mAP@50-95).</p>
               </div>
             </div>
           </div>
@@ -319,7 +350,7 @@
             <h2 class="title is-3">Traits Classification</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/traits.png" alt="algebraic reasoning" class="center">
+                <img src="static/images/traits.png" alt="Table of trait classification accuracy and F1 on AnimalClue, including diet type, activity pattern, habitat, herding, and predator" class="center">
                 <p> Traits classification results on footprints, feces, eggs, bones, and feathers datasets (Acc/F1 score).</p>
               </div>
             </div>
@@ -330,7 +361,7 @@
             <h2 class="title is-3">Visualization of detection results</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/vis_det.png" alt="algebraic reasoning" class="center">
+                <img src="static/images/vis_det.png" alt="YOLOv11 detection examples on animal footprints, feces, eggs, bones, and feathers with predicted species such as common raccoon and wild turkey" class="center">
                 <p> Visualization of YOLOv11 detection results. The green bounding box denotes the correct detection, and the red bounding box denotes the wrong detection</p>
               </div>
             </div>
@@ -341,7 +372,7 @@
             <h2 class="title is-3">Visualization of segmentation result</h2>
             <div class="content has-text-justified">
               <div class="content has-text-centered">
-                <img src="static/images/vis_seg.png" alt="algebraic reasoning" class="center">
+                <img src="static/images/vis_seg.png" alt="YOLOv11 instance segmentation examples on animal feces, eggs, bones, and feathers with predicted species such as gray wolf and red-winged blackbird" class="center">
                 <p> Visualization of YOLOv11 instance segmentation results. The green mask denotes the correct mask, and the red mask denotes the wrong mask.</p>
               </div>
             </div>
@@ -433,7 +464,7 @@
         <div class="column is-8">
           <div class="content">
             <p>
-              This website is website adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
+              This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://mathvista.github.io/">MathVista</a>, licensed under a <a rel="license"
                                                   href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
               Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
